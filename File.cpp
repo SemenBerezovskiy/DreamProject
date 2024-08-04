@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+int Zero = 0;
 
 void Print(std::string& PrintableInformation, bool CoutOrCin, std::string& Insertable)
 {
@@ -15,9 +16,9 @@ public:
     void MakeAPassword() // Метод должен быть публичным и возвращать void
     {
         std::string Password; // Используем std::string для пароля
-        std::string Coment = "Добро пожаловать в центр управления Ядерными Бойголовками\t Придумайте пароль:";
+        std::string Coment = "Добро пожаловать в центр управления Ядерными Бойголовками\n Придумайте пароль:";
         Print(Coment, true, Password); // Печатаем комментарий
-        Print(Password, false, Password); // Считываем пароль
+        Print(Coment, false, Password); // Считываем пароль
     }
 };
 int main()
