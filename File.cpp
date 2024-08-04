@@ -1,13 +1,26 @@
 #include <iostream>
 #include <string>
 
-void Print(auto PrintableInformation)
+int Zero = 0;
+void Print(auto PrintableInformation, bool CoutOrCin, auto Insertable)
 {
-    std::cout << PrintableInformation << std::endl;
+    switch CoutOrCin
+    {
+        case true: std::cout << PrintableInformation;
+        case false: std::cin >> Insertable;
     return 1;
+    }
 }
 int main()
 {
-    std::string Catty = "I love cats";
-    Print(Catty);
+    
 }
+class SecurityManager
+{
+    auto MakeAPassword()
+    {
+        int Password
+        std::string Coment = "Добро пожалвать в центр упаравления Ядерными Бойголовками\t Придумайте пароль:";
+        Print(Coment, true, Zero);
+    }
+};
